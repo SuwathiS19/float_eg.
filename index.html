@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO
+1. Make both paragraph elements wrap around the image.
+2. Use Float to move the cat div to the left and the dog div to the right.
+3. Use clear to make the footer go below both the cat and dog div. -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float</title>
+  <style>
+    div {
+      display: inline-block;
+      width: 40%;
+    }
+    h2{
+      text-align: center;
+    }
+
+    p {
+      font-size:1.5rem;
+    }
+
+    .HTML {
+      font-family:monospace;
+      float:left;
+      background-color:black;
+      color: white;
+    }
+
+    .Css{
+      font-family: monospace;
+      float: right;
+      background-color: black;
+      color: white;
+    }
+    footer {
+      clear: both;
+      text-align: center;
+      background-color:skyblue;
+     }
+  </style>
+</head>
+
+<body>
+  <div class="HTML">
+    <h2>HTML</h2>
+
+    <img src="html.jpeg" alt="cat in a box" />
+    <p class="first-paragraph">HTML is a markup language used by the browser to manipulate text, images, and other content, in order to display it in the required format. HTML was created by Tim Berners-Lee in 1991. The first-ever version of HTML was HTML 1.0, but the first standard version was HTML 2.0, published in 1995.</p>
+  </div>
+  <div class="Css">
+    <h2>CSS</h2>
+    <img src="Css.jpeg" alt="dogs in a box" />
+    <p class="second-paragraph">CSS stands for Cascading Style Sheets
+      CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+      CSS saves a lot of work. It can control the layout of multiple web pages all at once
+      External stylesheets are stored in CSS files</p>
+  </div>
+
+  <footer>@ss web</footer>
+</body>
+
+</html>
